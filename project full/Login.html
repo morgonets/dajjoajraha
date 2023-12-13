@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+<header id="main">
+
+    <img src="img/logo.jpg" alt="" style="height: 100px;">
+
+  <div class="selector">
+    <div id="popupBtn" onclick="Back()"><img src="img/images.png" alt="" style="height: 50px;"></div>
+  </div>
+</header>
+<div class="grid-cont">
+  <div class="registration-form">
+    <h2>Login</h2>
+    <form id="registrationForm" onsubmit="return validateForm()">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <div>
+        <div class="error-container" id="errorContainer"></div>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</div>
+<script>
+
+  function validateForm() {
+    let password = document.getElementById("password").value;
+    let errorContainer = document.getElementById("errorContainer");
+
+    // Clear previous error messages
+    errorContainer.innerHTML = "";
+
+    // Introduce errors and display messages if conditions are not met
+    if (password.length < 8) {
+      displayError("Incorrect password");
+      return false;
+    }
+
+    if (!/[A-Z]/.test(password)) {
+      displayError("Incorrect password");
+      return false;
+    }
+
+    if (!/[a-z]/.test(password)) {
+      displayError("Incorrect password");
+      return false;
+    }
+
+    // If all conditions are met, navigate to the next HTML page
+    window.location.href = "Login2.html";
+    return false; // Returning false prevents the form from submitting in the traditional way
+  }
+
+  function displayError(errorMessage) {
+    let errorContainer = document.getElementById("errorContainer");
+    let errorDiv = document.createElement("div");
+    errorDiv.className = "error-message";
+    errorDiv.textContent = errorMessage;
+    errorContainer.appendChild(errorDiv);
+  }
+  function Back() {
+    window.location.href = 'index.html';
+  }
+</script>
+</body>
+</html>

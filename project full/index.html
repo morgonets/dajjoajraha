@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+
+<body>
+    <header id="main">
+
+        <img src="img/logo.jpg" alt="" style="height: 100px;">
+
+        <div class="menu">
+            <nav>
+                <a href="#sushi">
+                    <H1>SUSHI MENU</H1>
+                </a>
+            </nav>
+        </div>
+
+        <div class="menu">
+          <nav>
+            <a href="#Pizza"><H1>PIZZA MENU</H1></a>
+          </nav> 
+        </div>
+
+        <div class="selector">
+            <div id="popupBtn"><img src="img/more.png" alt="" style="height: 50px;"></div>
+
+            <div class="hidden" id="popup">
+                <div class="h">
+                    <div class="element" onclick="goindex1()"><a>JOB</a></div>
+                    <div class="element"><a>REGION</a></div>
+                    <div class="element" onclick="goindex3()"><a>REGISTRATION</a></div>
+                    <div class="element" onclick="goindex4()"><a>LOGIN</a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+   
+        <div class="slider">
+            <div><img src="img/banner.jpg" alt="Slide 1"></div>
+            <div><img src="img/banner1.jpg" alt="Slide 2"></div>
+            <div><img src="img/banner2.jpg" alt="Slide 3"></div>
+            <!-- Добавьте сколько угодно слайдов с изображениями -->
+          </div>
+          
+ 
+          <section id="sushi">
+            <div class="header-s">
+     <h2>SUSHI MENU</h2>
+    </div>
+          </section>  
+   
+
+    <div class="grid-cont">
+        <div class="sushi-name" onclick="addB()">
+            <img src="img/image(1).png" alt="">
+            <h1 class="names">Kihanigi</h1>
+            <button class="order">order</button>
+        </div>
+
+        <div class="sushi-name" onclick="addB()">
+            <img src="img/image(2).png" alt="">
+            <h1 class="names">Himikota</h1>
+            <button class="order">order</button>
+        </div>
+
+        <div class="sushi-name" onclick="addB()">
+            <img src="img/image(3).png" alt="">
+            <h1 class="names">Kagemita</h1>
+            <button class="order">order</button>
+        </div>
+
+        <div class="sushi-name" onclick="addB()">
+            <img src="img/image(4).png" alt="">
+            <h1 class="names">Mina-rin</h1>
+            <button class="order">order</button>
+        </div>
+
+
+        
+        <div class="sushi-name" onclick="addB()">
+            <img src="img/image(5).png" alt="">
+            <h1 class="names">Rinkyte</h1>
+            <button class="order">order</button>
+        </div>
+
+        <div class="sushi-name" onclick="addB()">
+            <img src="img/image(6).png" alt="">
+            <h1 class="names">Mishyte</h1>
+            <button class="order">order</button>
+        </div>
+
+        <div class="sushi-name" onclick="addB()">
+            <img src="img/image(7).png" alt="">
+            <h1 class="names">Mishoki-tensei</h1>
+            <button class="order">order</button>
+        </div>
+
+        <div class="sushi-name" onclick="addB()">
+            <img src="img/image(8).png" alt="">
+            <h1 class="names">Iamori</h1>
+            <button class="order">order</button>
+        </div>
+
+        <div class="sushi-name" onclick="addB()">
+            <img src="img/image(9).png" alt="">
+            <h1 class="names">Kinyki</h1>
+            <button class="order">order</button>
+        </div>
+
+
+    </div>
+
+  
+  <section id="Pizza">
+          <div class="header-s">
+        <h2>PIZZA MENU</h2>
+       </div>  
+        </section>
+   
+  <!-- PIZZA -->
+  
+    <div class="grid-cont">
+        <div class="sushi-name">
+            <img src="img/image(10).jpg" alt="" style="height: 180px; " >
+            <h1 class="names">Pizza Peperoni</h1>
+            <button class="order">order</button>
+        </div>
+
+        <div class="sushi-name" onclick="addB()">
+            <img src="img/image(11).jpg" alt="" style="height: 180px; " >
+            <h1 class="names">Greece Pizza</h1>
+            <button class="order">order</button>
+        </div>
+
+        <div class="sushi-name" onclick="addB()">
+            <img src="img/image(12).jpg" alt="" style="height: 180px; " >
+            <h1 class="names">Ham Pizza</h1>
+            <button class="order">order</button>
+        </div>
+
+        <div class="sushi-name" onclick="addB()">
+            <img src="img/image(13).jpg" alt="" style="height: 180px; " >
+            <h1 class="names">Shrimp Pizza</h1>
+            <button class="order">order</button>
+        </div>
+
+
+        
+        <div class="sushi-name" onclick="addB()">
+            <img src="img/image(14).jpg" alt="" style="height: 180px; ">
+            <h1 class="names">Christian Pizza</h1>
+            <button class="order">order</button>
+        </div>
+
+        <div class="sushi-name" onclick="addB()">
+            <img src="img/image(15).jpg "  style="height: 180px; " >
+            <h1 class="names">Pizza Margarita</h1>
+            <button class="order">order</button>
+        </div>
+
+        <div class="sushi-name" onclick="addB()">
+            <img src="img/image(16).jpg" alt="" style="height: 180px; " >
+            <h1 class="names">BBQ Pizza</h1>
+            <button class="order">order</button>
+        </div>
+
+        <div class="sushi-name" onclick="addB()">
+            <img src="img/image(17).jpg" alt="" style="height: 180px; ">
+            <h1 class="names"> Normal Pizza </h1>
+            <button class="order">order</button>
+        </div>
+
+        <div class="sushi-name" onclick="addB()">
+            <img src="img/image(18).jpg" alt="" style="height: 180px; ">
+            <h1 class="names">Cheeseburger Pizza</h1>
+            <button class="order">order</button>
+        </div>
+    </div>
+
+    <div id="sliding-content">
+        <!-- Close button -->
+        <div id="close-btn" onclick="closeSlidingContent()"></div>
+        <!-- Image at the top -->
+        <img id="sliding-content-img" src="img/back1.png" alt="Image" onclick="closeSlidingContent()" style="width: 50px; height: 50px;">
+        <!-- Content you want to slide in -->
+        <!-- Example: -->
+        <h2>Your Order</h2>
+        <ul id="order-list"></ul>
+    </div>
+
+    <div id="basket-container">
+        <img id="basket-image" src="img/basket1.jpg" alt="Basket">
+    </div>
+    <div id="order-counter">0</div>
+
+    <script defer src="script.js"></script>
+</body>
+</html>

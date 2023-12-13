@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="job.css">
+  <title>Submit Resume</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+    }
+
+    #main {
+      background-color: rgb(255, 255, 255);
+      height: 100px;
+      width: 100%;
+      border-bottom: 5px solid black;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    #main img {
+      height: 100px;
+    }
+
+    .selector {
+      display: flex;
+      align-items: center;
+    }
+
+    #popupBtn {
+      cursor: pointer;
+      margin-right: 100px; /* Adjusted margin for moving the image to the left */
+    }
+
+    .grid-cont {
+      display: grid;
+      place-items: center;
+      height: 100vh;
+    }
+
+    .registration-form {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+      text-align: center;
+      margin: auto;
+    }
+
+    .registration-form h2 {
+      color: #333;
+    }
+
+    .registration-form form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .registration-form label {
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    .registration-form input {
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .registration-form button {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .registration-form button:hover {
+      background-color: #555;
+    }
+  </style>
+  </style>
+</head>
+<body>
+
+<header id="main">
+
+    <img src="img/logo.jpg" alt="" style="height: 100px;">
+
+  <div class="selector">
+    <div id="popupBtn" onclick="Back()"><img src="img/images.png" alt="" style="height: 50px;"></div>
+  </div>
+</header>
+
+<div class="grid-cont">
+  <div class="registration-form">
+    <h2>Submit Your Resume</h2>
+    <form action="jobsus.html" method="post" enctype="multipart/form-data">
+      <label for="full_name">Full Name:</label>
+      <input type="text" id="full_name" name="full_name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="resume">Upload Resume (PDF or Word):</label>
+      <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</div>
+<script>
+  function Back() {
+    window.location.href = 'index.html';
+  }
+</script>
+</body>
+</html>
